@@ -622,6 +622,7 @@
         $container.isotope({ filter: selector });
         return false;
       });
+      
       // added for when page is loaded, offices project list will be shown
       $(document).ready(function () {
         $('[data-filter=".builder"]').trigger("click");
