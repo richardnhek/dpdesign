@@ -1321,6 +1321,9 @@ ul.flat-list li:before {
 .flat-contact-form.style2 {
   padding: 0 200px;
 }
+.flat-contact-form.style3 {
+  padding: 0 50px;
+}
 
 .flat-contact-form input[type="text"],
 .flat-contact-form input[type="email"] {
