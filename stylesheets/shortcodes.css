@@ -97,6 +97,7 @@
 .flat-row.blog {
   background: #fcfcfc;
   padding: 90px 0 70px;
+  height: 750px !important;
 }
 
 .flat-row.request-box {
