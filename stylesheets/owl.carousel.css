@@ -148,11 +148,11 @@
  */
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
-  -webkit-transition: opacity 400ms ease;
-  -moz-transition: opacity 400ms ease;
-  -ms-transition: opacity 400ms ease;
-  -o-transition: opacity 400ms ease;
-  transition: opacity 400ms ease;
+  -webkit-transition: opacity 100ms ease;
+  -moz-transition: opacity 100ms ease;
+  -ms-transition: opacity 100ms ease;
+  -o-transition: opacity 100ms ease;
+  transition: opacity 100ms ease;
 }
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
@@ -221,47 +221,47 @@
 }
 
 .owl-theme .owl-dots .owl-dot {
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 .owl-theme .owl-dots .owl-dot span {
-    width: 6px;
-    height: 6px;
-    background-color: #eeeeee;
-    border-radius: 50%;
-    margin: 4px;   
-    display: block;
-    -webkit-backface-visibility: visible;
-    -webkit-transition: opacity 200ms ease;
-    -moz-transition: opacity 200ms ease;
-    -ms-transition: opacity 200ms ease;
-    -o-transition: opacity 200ms ease;
+  width: 6px;
+  height: 6px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  margin: 4px;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -moz-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #eab702;
-    
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #30a9de;
 }
 
 /* Styling Next and Prev buttons */
 .owl-theme .owl-controls .owl-nav div {
-    background: #eab702;
-    text-align: center;
-    display: inline-block;
-    outline: 0;
-    width: 40px;
-    text-align: center;
-    line-height: 40px;
-    height: 40px;    
-    color: #fff;
-    top: 50%;
-    font-size: 0;
-    margin-top: -20px; 
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;     
+  background: #30a9de;
+  text-align: center;
+  display: inline-block;
+  outline: 0;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  color: #fff;
+  top: 50%;
+  font-size: 0;
+  margin-top: -20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .owl-theme .owl-controls .owl-nav div:hover {
@@ -269,29 +269,29 @@
 }
 
 .owl-theme .owl-controls .owl-nav div.owl-prev {
-    position: absolute;
-    left: 0;   
+  position: absolute;
+  left: 0;
 }
 
 .owl-theme .owl-controls .owl-nav div.owl-prev:before,
 .owl-theme .owl-controls .owl-nav div.owl-next:before {
-    font-family: FontAwesome;    
-    font-size: 14px;
-    color: #fff; 
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-}  
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 
 .owl-theme .owl-controls .owl-nav div.owl-prev:before {
-   content: "\f104"; 
+  content: "\f104";
 }
 
 .owl-theme .owl-controls .owl-nav div.owl-prev:hover:before,
-.owl-theme .owl-controls .owl-nav div.owl-next:hover:before {    
-    color: #fff;
+.owl-theme .owl-controls .owl-nav div.owl-next:hover:before {
+  color: #fff;
 }
 
 .owl-theme .owl-controls .owl-nav div.owl-next {
@@ -299,6 +299,6 @@
   right: 0;
 }
 
-.owl-theme .owl-controls .owl-nav div.owl-next:before {    
-    content: "\f105";    
-}  
+.owl-theme .owl-controls .owl-nav div.owl-next:before {
+  content: "\f105";
+}
