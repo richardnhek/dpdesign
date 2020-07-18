@@ -909,13 +909,14 @@ h6 {
 /* Button menu mobile */
 .btn-menu {
   display: none;
-  position: relative;
+  position: absolute;
+  right: 10px;
+  top: 18px;
   background: transparent;
   cursor: pointer;
   margin: 42px 0;
   width: 26px;
   height: 16px;
-  float: right;
   margin-right: 15px;
   -webkit-transition: all ease 0.238s;
   -moz-transition: all ease 0.238s;

@@ -130,7 +130,7 @@
 
 .flat-row.background-client {
   background-color: #fcfcfc;
-  padding: 25px 0 27px;
+  padding: 35px 0 27px;
   border-top: 1px solid #eaeaea;
 }
 
@@ -789,10 +789,6 @@ ul.portfolio-filter {
 ul.portfolio-filter > li {
   padding: 0 21px;
   display: inline-block;
-}
-
-ul.portfolio-filter > li:first-child {
-  padding: 0 21px 0 0;
 }
 
 ul.portfolio-filter > li a {
