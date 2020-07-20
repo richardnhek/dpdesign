@@ -1,10 +1,27 @@
+/* Media Queries for Larger Screens
+-------------------------------------------------------------- */
+@media only screen and (max-width: 2000px) {
+  #titleLong {
+    width: 325px;
+  }
+}
+
 /* Media Queries
 -------------------------------------------------------------- */
 @media only screen and (max-width: 1366px) {
+  #titleLong {
+    width: 325px;
+  }
 }
 
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {
+  #titleLong {
+    width: auto;
+  }
+  article .featured-post img {
+    max-height: 168px !important;
+  }
 }
 
 /* Smaller than standard 992 */
