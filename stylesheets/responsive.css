@@ -26,6 +26,10 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+  .featured-post {
+    padding-left: 20px;
+  }
+
   .btn-menu {
     display: block;
   }
