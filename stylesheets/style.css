@@ -636,10 +636,7 @@ h6 {
   /* margin: 27px 0 0 0;	 */
 }
 
-.header .logo a img {
-  height: 140px;
-  width: 140px;
-}
+
 
 /* Header Fix */
 .header.downscrolled {
@@ -1072,7 +1069,7 @@ h6 {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 article .featured-post {

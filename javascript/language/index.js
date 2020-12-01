@@ -155,7 +155,6 @@ var data = {
         "aboutUs": "Who We are",
         "team": "Our Team",
         "partner": "Our Partners",
-        "history" : "Our Story",
         "service" : "Services",
         "work": "Work",
         "client": "Clients",

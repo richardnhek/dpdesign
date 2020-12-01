@@ -856,7 +856,7 @@
     if (retina) {
       $(".header .logo")
         .find("img")
-        .attr({ src: "./images/others/logo.png", width: "123", height: "45" });
+        .attr({ src: "../images/logo.png", width: "123", height: "45" });
     }
   };
 
