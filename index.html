@@ -37,12 +37,15 @@
     <link href="icon/apple-touch-icon-32-precomposed.png" rel="apple-touch-icon-precomposed">
     <link href="icon/favicon.png" rel="shortcut icon">
 
+    
+
     <!--[if lt IE 9]>
         <script src="javascript/html5shiv.js"></script>
         <script src="javascript/respond.min.js"></script>
     <![endif]-->
 </head>                                 
-<body class="header_sticky">   
+<body id=indexKH class="header_sticky">   
+        
     <!-- Preloader -->
     <section class="loading-overlay">
         <div class="Loading-Page">
@@ -50,8 +53,7 @@
         </div>
     </section>   
     <!-- Boxed -->
-    <div class="boxed">
-
+<div  class="boxed">
     <div class="top">
         <div class="container">
             <div class="row">
@@ -64,19 +66,19 @@
                 </div><!-- /.col-md-6 -->       
                 <div class="col-md-6">
                     <div class="social-links">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                          
+                        <select v-model="lang" @Change="changeEvent($event)">
+                            <option value="en">English</option>
+                            <option value="kh">Khmer</option>
+                        </select>  
+                        <a href="#"><i class="fa fa-facebook"></i></a>                 
                         <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" language="english" class="active"><img src="icon/uk.svg" alt=""></a>
-                        <a href="#" language="khmer"><img src="icon/cambodia.svg" alt=""></a>
                     </div>
                 </div>        
             </div><!-- /.row -->
         </div><!-- /.container -->
     </div><!-- /.top -->
-
     <!-- Header -->            
-    <header id="header" class="header clearfix">
+    <header id="header"  class="header clearfix">
         <div class="container">
             <div class="row">                 
                 <div class="header-wrap clearfix">
@@ -95,7 +97,7 @@
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu"> 
                                     <li class="home">
-                                        <a href="index.html" class="ih1">Home</a> 
+                                        <a href="index.html"> {{name}}</a> 
                                     </li>
                                     <li><a href="about.html" class="ia1">About Us</a>
                                     <ul class="submenu"> 
@@ -1023,11 +1025,10 @@
     <a class="go-top">
         <i class="fa fa-angle-up"></i>
     </a>   
-
-    
-
-    </div>
-    
+</div>
+     <!-- vue -->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+     <script src="./javascript/language/app.js"></script>
     <!-- Javascript -->
     <script type="text/javascript" src="./javascript/jquery.min.js"></script>
     <script type="text/javascript" src="./javascript/bootstrap.min.js"></script> 
@@ -1064,7 +1065,7 @@
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
 
-    <script type="text/javascript" src="./javascript/language/index.js"></script>
+    
     
 </body>
 </html>
