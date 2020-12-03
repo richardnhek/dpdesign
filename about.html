@@ -45,86 +45,73 @@
             <h2 class="loader">Loading</h2>
         </div>
     </section>   
-
+<div id="ap1">
     <!-- Boxed -->
     <div class="boxed">
-
-    <div class="top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">                      
-                    <ul class="flat-information">
-                        <li class="phone"><a href=#>Call us: +855 92 500 447 | +855 93 500 447</a></li>
-                        <li class="email"><a href=#>Email: operation@dp7design.com</a></li>
-                    </ul>                    
-                </div><!-- /.col-md-6 -->       
-                <div class="col-md-6">
-                    <div class="social-links">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                          
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><img src="icon/uk.svg" alt=""></a>
-                        <a href=""><img src="icon/cambodia.svg" alt=""></a>        </div>
-                </div>        
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div><!-- /.top -->
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">                      
+                        <ul class="flat-information">
+                            <li class="phone"><a href=#>Call us: +855 92 500 447 | +855 93 500 447</a></li>
+                            <li class="email"><a href=#>Email: operation@dp7design.com</a></li>   
+                        </ul>                    
+                    </div><!-- /.col-md-6 -->       
+                    <div class="col-md-6">
+                        <div class="social-links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>                 
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <!-- <a href="#" language="english" class="active"><img src="icon/uk.svg" alt=""></a>
+                            <a href="#" language="khmer"><img src="icon/cambodia.svg" alt=""></a> -->
+                            <select v-model="defaultLang">
+                                <option v-for="lang in langs" v-bind:value="lang.id">{{lang.name}}</option>
+                            </select>
+                        </div>
+                    </div>        
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.top -->
     
     <!-- Header -->            
     <header id="header" class="header clearfix">
         <div class="container">
             <div class="row">                 
                 <div class="header-wrap clearfix">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div id="logo" class="logo">
                             <a href="index.html" rel="home">
-                                <img src="images/others/logo.jpg" alt="image">
+                                <!-- <img src="./images/logo.png" alt="image" height="120px" width="120px"> -->
                             </a>
                         </div><!-- /.logo -->
                         <div class="btn-menu">
                             <span></span>
                         </div><!-- //mobile menu button -->
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="nav-wrap">                            
                             <nav id="mainnav" class="mainnav">
                                 <ul class="menu"> 
-                                    <li>
-                                        <a href="index.html" class="ih1">Home</a>  
-                                    </li>
-                                    <li  class="home"><a href="about.html" class="ia1">About Us</a>
-                                    <ul class="submenu"> 
-                                            <li><a href="about.html" class="ia2">Who We Are</a>
-                                            </li>
-                                            <li><a href="team.html" class="ia3">Our Team</a>
-                                            </li>
-                                            <li><a href="partner.html">Our Partners</a>
-                                            </li>                                                                                       
-                                    </ul><!-- /.submenu -->
-                                    </li>
-                                    <li><a href="services.html"​ class="is1">Services</a></li>
-                                    <li><a href="work.html"​ class="iw1">Work</a>
-
-                                      
-                                    </li>
-                                    <li><a href="client.html"  class="ic1">Clients</a>
-</li>
-                                    <li><a href="contact.html" class="ict1">Contact</a>
-</li>
-                                    <li> <a href="blog.html" class="it1">Tips</a>
-
-                                        <ul class="submenu right-sub-menu"> 
-                                            <li><a href="blog.html">Plumbing</a>
-                                            </li>
-                                            <li><a href="blog-single.html">DIY Furnitures</a>
-                                            </li>
+                                    <li class="home"><a href="index.html">{{text[defaultLang].navHome}}</a></li>
+                                    <li><a href="about.html">{{text[defaultLang].navAbout}}</a>
+                                        <ul class="submenu"> 
+                                            <li><a href="about.html">{{text[defaultLang].navWWA}}</a></li>
+                                            <li><a href="team.html">{{text[defaultLang].navOT}}</a></li>
+                                            <li><a href="partner.html">{{text[defaultLang].navOP}}</a></li>                                                  
                                         </ul><!-- /.submenu -->
-                                    </li>                        
+                                    </li>    
+                                    <li><a href="services.html" >{{text[defaultLang].navService}}</a></li>
+                                    <li><a href="work.html" >{{text[defaultLang].navWork}}</a></li>
+                                    <li><a href="client.html">{{text[defaultLang].navClient}}</a></li>
+                                    <li><a href="contact.html">{{text[defaultLang].navContact}}</a></li>
+                                    <li><a href="blog.html">{{text[defaultLang].navTip}}</a>
+                                        <ul class="submenu right-sub-menu"> 
+                                            <li><a href="blog.html">Plumbing</a></li>   
+                                            <li><a href="blog-single.html">DIY Furnitures</a></li>
+                                        </ul><!-- /.submenu -->
+                                    </li>
                                 </ul><!-- /.menu -->
                             </nav><!-- /.mainnav -->  
-
                         </div><!-- /.nav-wrap -->
-                        
                     </div>                      
                 </div><!-- /.header-inner -->                 
             </div><!-- /.row -->
@@ -138,13 +125,13 @@
             <div class="row">
                 <div class="col-md-12">                    
                     <div class="page-title-heading">
-                        <h1 class="title">About</h1>
+                        <h1 class="title">{{text[defaultLang].navAbout}}</h1>
                     </div><!-- /.page-title-captions -->
                     <div class="breadcrumbs">
                         <ul>
-                            <li><a href="index.html" >Home</a> </li>
-                            <li><a href="about.html"> About </a></li>
-                            <li> Who We Are </li>
+                            <li><a href="index.html" >{{text[defaultLang].navHome}}</a> </li>
+                            <li><a href="about.html"> {{text[defaultLang].navAbout}} </a></li>
+                            <li> {{text[defaultLang].navWWA}}</li>
                         </ul>                   
                     </div><!-- /.breadcrumbs -->   
                 </div><!-- /.col-md-12 -->  
@@ -161,42 +148,37 @@
             			<div class="featured-post flat-blog-slider">
                             <div class="flexslider">
                                 <ul class="slides">
-                                    <li>
-                                        <a href="#"><img src="images/services/16.jpg" alt="image"></a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-single-v1.html"><img src="images/services/15.jpg" alt="image" class="abtImg"></a>
-                                    </li>
+                                    <li><a href="#"><img src="images/services/16.jpg" alt="image"></a></li>
+                                    <li><a href="blog-single-v1.html"><img src="images/services/15.jpg" alt="image" class="abtImg"></a></li>
                                 </ul>
                             </div>                            
                         </div><!-- /.feature-post -->
 
                         <div class="about-content-text">
-                            <h4 class="about-content-title">WHO WE ARE</h4>
+                            <h4 class="about-content-title">{{text[defaultLang].navWWA}}</h4>
 
-                            <p><H6>DP7DESIGN is a local construction company based in The Kingdom of Cambodia</strong></H6>
+                            <p><H6>{{text[defaultLang].ct1}}</strong></H6></p>
 
-                            <p>We provide services such as full turnkey service, interior/exterior design, architectural service, construction service, renovation service, expansion service, MEP service and furnitures/production design.</p>
+                            <p>{{text[defaultLang].ct2}}</p>
 
-                            <p>Possessing many years of experiences in local interior/ exterior design and production, DP7 brings together extensive knowledge related standard 
-                                quality.</p>
+                            <p>{{text[defaultLang].ct3}}</p>
 
-                            <p>We have successfully completed many projects including retail store renovation, office renovation projects and furniture productions.</p>
+                            <p>{{text[defaultLang].ct4}}</p>
 
-                            <p>All our projects was, are and will always be successfully completed with passion and perfection because we have the right teams for all our clients.</p>
+                            <p>{{text[defaultLang].ct5}}</p>
                         </div>
 
                         <div class="about-content-text item-column clearfix">
                             <div class="item-two-column">
-                                <h4 class="about-content-title">WHY CHOOSE US ? </h4>
-                                <p>Our clients tell us we are unique for a variety of important reasons including:</p>
+                                <h4 class="about-content-title">{{text[defaultLang].ct6}}</h4>
+                                <p>{{text[defaultLang].ct7}}</p>
                                 <ul class="flat-list style1">
-                                    <li>Many Years Of Experience In The Industry</li>
-                                    <li>Have The Right Teams For You </li>
-                                    <li>Lots Of Close Partnerships With Leading Professionals In The Industry </li>
-                                    <li>Full Of Dedicated, Skilled & Highly Experienced Employees</li>
-                                    <li>Carefully Select The Finest Materials From Both Local & Global Brands</li>
-                                    <li>Reputed For Delivering Amazing Results Among Both Public & Private Sector Clients</li>
+                                    <li>{{text[defaultLang].ct8}}</li>
+                                    <li>{{text[defaultLang].ct9}}</li>
+                                    <li>{{text[defaultLang].ct10}}</li>
+                                    <li>{{text[defaultLang].ct11}}</li>
+                                    <li>{{text[defaultLang].ct12}}</li>
+                                    <li>{{text[defaultLang].ct13}}</li>
                                 </ul>
                             </div>
 
@@ -204,9 +186,9 @@
                             	<div class="empty-space height40"></div>                              
 		                        <div class="flat-tabs v1" data-effect ="fadeIn">
 		                            <ul class="menu-tab">
-		                                <li class="active"><a href="#">High Quality</a></li>
-		                                <li><a href="#">Innovative</a></li>
-		                                <li><a href="#">Cost Effective</a></li>
+		                                <li class="active"><a href="#">{{text[defaultLang].mt1}}</a></li>
+		                                <li><a href="#">{{text[defaultLang].mt2}}</a></li>
+		                                <li><a href="#">{{text[defaultLang].mt3}}</a></li>
 		                            </ul><!-- /.menu-tab -->
 		                            <div class="content-tab">
 		                                <div class="content-inner">
@@ -217,8 +199,7 @@
 		                                    
 		                                </div>
 		                                <div class="content-inner">
-		                                    <img src="images/services/19.jpg" alt="images">
-		                                    
+		                                    <img src="images/services/19.jpg" alt="images">		                                    
 		                                </div>
 		                            </div><!-- /.content-tab -->
 		                        </div><!-- /.roll-tabs -->
@@ -227,30 +208,30 @@
 
                         <div class="flat-accordion style">
                             <div class="flat-toggle">
-                                <h6 class="toggle-title apa active">Project Management</h6>
+                                <h6 class="toggle-title apa active">{{text[defaultLang].fad1}}</h6>
                                 <div class="toggle-content">
-                                    <p>Excelled in project management, we are able to finish all projects with ease, on time and with high quality. Thus, most of our clients usually trust us in completing multiple projects at a time.</p>                               
+                                    <p>{{text[defaultLang].fat1}}</p>                               
                                 </div>
                             </div><!-- /toggle -->
 
                             <div class="flat-toggle">
-                                <h6 class="toggle-title imp">Coordination Process</h6>
+                                <h6 class="toggle-title imp">{{text[defaultLang].fad2}}</h6>
                                 <div class="toggle-content">
-                                    <p>We only deploy highly experienced personnels on site together with top notch project managers who can coordinate all the staffs on-site. Furthermore, our clients will always be updated about the progress of the project.</p>                               
+                                    <p>{{text[defaultLang].fat2}}</p>                               
                                 </div>
                             </div><!-- /toggle -->
 
                             <div class="flat-toggle">
-                                <h6 class="toggle-title dep">Cost Reporting</h6>
+                                <h6 class="toggle-title dep">{{text[defaultLang].fad3}}</h6>
                                 <div class="toggle-content">
-                                    <p>We are reputed amongst our clients for our cost-effective and high quality methods. It is possible only because we always keep our customers updated with all cost incurrences.</p>                               
+                                    <p>{{text[defaultLang].fat3}}</p>                               
                                 </div>
                             </div><!-- /toggle -->
 
                             <div class="flat-toggle">
-                                <h6 class="toggle-title four">Monthly Project Performance Reviews</h6>
+                                <h6 class="toggle-title four">{{text[defaultLang].fad4}}</h6>
                                 <div class="toggle-content">
-                                    <p>Each month we perform review and feedback sessions with our clients regarding the progress and our performance. As a result, we have never gotten any complaints or bad reviews for our work.</p>                               
+                                    <p>{{text[defaultLang].fat4}}</p>                               
                                 </div>
                             </div><!-- /toggle -->
                         </div>
@@ -261,13 +242,13 @@
             		<div class="sidebar">
             			<div class="sidebar-nav">
 							<ul>
-								<li><a href="about.html"  class="active">Who We Are</a></li>
-								<li><a href="team.html" >Our Team</a></li>
-                                <li><a href="partner.html" >Our Partners</a>
+								<li><a href="about.html"  class="active">{{text[defaultLang].navWWA}}</a></li>
+								<li><a href="team.html" >{{text[defaultLang].navOT}}</a></li>
+                                <li><a href="partner.html" >{{text[defaultLang].navOP}}</a>
 							</ul>
 						</div>
 						<div class="widget widget-dowload brochure">
-							<h3>Download Brochures</h3>							
+							<h3>{{text[defaultLang].brochure}}</h3>							
 							<ul class="dowload">
                                 <li class="dl-pdf"><a href="https://drive.google.com/uc?export=download&id=1oaeFbty-TFOvtbQJBWck6afwR7VP0rym">DP7DesignCompanyProfile.PDF</a></li>
                                 <li class="dl-pdf"><a href="https://drive.google.com/uc?export=download&id=1XCHXIM7xK2MrQe4NMRzJnRivj6GQvF5c">Project References.PDF</a></li>                                
@@ -281,145 +262,131 @@
         </div><!-- /.container -->   
     </section>     
 
-    <!-- Mail Chimp -->
-    <section class="flat-row mail-chimp">        
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="text">
-                        <h3>Need more information?</h3>
-                        <p>Please email us and our support staff will contact you back</p>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="subscribe">
-                        <form method="post" id="subscribeForm" class="subscribe-form" action="./contact/subscribe-process.php">
-                            <label>
-                                <input type="email" id="emailsubscribe" name="email" placeholder="Enter you email..." value="" required="required" title="Enter your email">
-                            </label>
-                            <input type="submit" class="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div> 
-        </div><!-- /.container -->   
-    </section>  
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-widgets">
+        <!-- Mail Chimp -->
+        <section class="flat-row mail-chimp">        
             <div class="container">
-                <div class="row"> 
-                    <div class="col-md-6">  
-                        <div class="widget widget_text widget_info">
-                             <h4 class="ift widget-title">about us</h4>
-                            <div class="textwidget">                                
-                                <p class="ifd1">DP7 DESIGN is a local company
-                                    that provides services such as interior/exterior
-                                    design and production design. We're
-                                    based in the Kingdom of Cambodia.  </p>
-
-                                 <p class="ifd2">Possessing many years of experiences in local interior/
-                                    exterior design and production, DP7 brings together
-                                    extensive knowledge related standard quality. We have successfully
-                                    completed many projects including retail store renovation,
-                                    office renovation projects and furniture productions.
-                                    All our projects was, are and will always be successfully completed with 
-                                    passion and perfection because we have the right teams for all our clients.</p>
-
-                                <div class="social-links">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                            </div>
-                                                               
-                            </div><!-- /.textwidget -->
-                        </div><!-- /.widget -->      
-                    </div><!-- /.col-md-3 --> 
-
-                    <div class="col-md-6">  
-                    <div id="nav_menu-2" class="widget widget_text widget_info">   
-            <form
-                id="contactform"
-                class="flat-contact-form style3 bg-dark height-small"
-                method="post"
-                action="./contact/contact-process.php"
-              >
-              <h4 class="ifd3 widget-title">Get In Touch</h4>  
-                <div class="field clearfix">
-                  <div class="wrap-type-input">
-                    <div class="input-wrap name">
-                      <input
-                        type="text"
-                        value=""
-                        tabindex="1"
-                        placeholder="Name"
-                        name="name"
-                        id="name"
-                        required
-                      />
-                    </div>
-                    <div class="input-wrap email">
-                      <input
-                        type="email"
-                        value=""
-                        tabindex="2"
-                        placeholder="Email"
-                        name="email"
-                        id="email"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="textarea-wrap">
-                    <textarea
-                      class="type-input"
-                      tabindex="3"
-                      placeholder="Message"
-                      name="message"
-                      id="message-contact"
-                      required
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="submit-wrap">
-                  <button class="ifd4 flat-button bg-theme">
-                    Send Your Message
-                  </button>
-                </div>
-              </form>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="text">
+                            <h3>{{text[defaultLang].mail1}}</h3>
+                            <p>{{text[defaultLang].mail2}}</p>
                         </div>
-                    </div><!-- /.col-md-3 -->
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="subscribe">
+                            <form method="post" id="subscribeForm" class="subscribe-form" action="./contact/subscribe-process.php">
+                                <label>
+                                    <input type="email" id="emailsubscribe" name="email" placeholder="Enter you email..." value="" required="required" title="Enter your email">
+                                </label>
+                                <input type="submit" class="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div><!-- /.container -->   
+        </section>
 
-                  
-                </div><!-- /.row -->    
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-widgets">
+                <div class="container">
+                    <div class="row"> 
+                        <div class="col-md-6">  
+                            <div class="widget widget_text widget_info">
+                                <h4 class="ift widget-title">{{text[defaultLang].footTitle}}</h4>
+                                <div class="textwidget">                                
+                                    <p>{{text[defaultLang].foot1}}</p>
+
+                                    <p>{{text[defaultLang].foot2}}</p>
+                                    <div class="social-links">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                </div>
+                                                                
+                                </div><!-- /.textwidget -->
+                            </div><!-- /.widget -->      
+                        </div><!-- /.col-md-3 --> 
+                        <div class="col-md-6">  
+                            <div id="nav_menu-2" class="widget widget_text widget_info">   
+                                <form
+                                    id="contactform"
+                                    class="flat-contact-form style3 bg-dark height-small"
+                                    method="post"
+                                    action="./contact/contact-process.php">
+                                    <h4 class=" widget-title">{{text[defaultLang].foot3}}</h4> 
+                                    <div class="field clearfix">
+                                        <div class="wrap-type-input">
+                                            <div class="input-wrap name">
+                                                <input
+                                                    type="text"
+                                                    value=""
+                                                    tabindex="1"
+                                                    placeholder="Name"
+                                                    name="name"
+                                                    id="name"
+                                                    required
+                                                />
+                                            </div>
+                                            <div class="input-wrap email">
+                                                <input
+                                                    type="email"
+                                                    value=""
+                                                    tabindex="2"
+                                                    placeholder="Email"
+                                                    name="email"
+                                                    id="email"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="textarea-wrap">
+                                            <textarea
+                                                class="type-input"
+                                                tabindex="3"
+                                                placeholder="Message"
+                                                name="message"
+                                                id="message-contact"
+                                                required
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="submit-wrap">
+                                        <button class=" flat-button bg-theme">
+                                            {{text[defaultLang].foot4}}
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- /.col-md-3 --> 
+                    </div><!-- /.row -->    
+                </div><!-- /.container -->
+            </div><!-- /.footer-widgets -->
+        </footer>
+
+        <!-- Bottom -->
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright text-center"> 
+                            <p>© Copyright <a href="#">DP7 Design and Development Co., Ltd.</a> 2020. All Rights Reserved.
+                            </p>
+                        </div>                   
+                    </div><!-- /.col-md-6 -->              
+                </div><!-- /.row -->
             </div><!-- /.container -->
-        </div><!-- /.footer-widgets -->
+        </div>
 
-    </footer>
+        <!-- Go Top -->
+        <a class="go-top">
+            <i class="fa fa-angle-up"></i>
+        </a>   
+        </div>
+</div>
 
-    <!-- Bottom -->
-    <div class="bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="copyright text-center"> 
-                        <p>© Copyright <a href="#">DP7 Design and Development Co., Ltd.</a> 2017. All Rights Reserved.
-                        </p>
-                    </div>                   
-                </div><!-- /.col-md-6 -->              
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </div>
-    <!-- Go Top -->
-    <a class="go-top">
-        <i class="fa fa-angle-up"></i>
-    </a>   
-
-    
-
-
-    </div>
-    
+    <!-- vue -->
+    <script  type="text/javascript" src="javascript/vue.min.js"></script>
+    <script src="kh/aboutkh.js"></script>
     <!-- Javascript -->
     
     <script type="text/javascript" src="javascript/jquery.min.js"></script>
