@@ -93,7 +93,7 @@ new Vue({
 
          },
          kh: {
-            navHome: 'អំពីយើង',
+            navHome: 'ទំព័រដើម',
             navAbout: 'អំពីយើង',
             navWWA:'តើពួកយើងជាអ្នកណា',
             navOT: 'សមាជិករបស់យើង',
