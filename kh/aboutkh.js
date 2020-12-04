@@ -44,7 +44,14 @@ new Vue({
            fad3: 'Cost Reporting',
            fat3: 'We are reputed amongst our clients for our cost-effective and high quality methods. It is possible only because we always keep our customers updated with all cost incurrences.',
            fad4: 'Monthly Project Performance Reviews',
-           fat4: 'We are reputed amongst our clients for our cost-effective and high quality methods. It is possible only because we always keep our customers updated with all cost incurrences.',
+           fat4: 'Each month we perform review and feedback sessions with our clients regarding the progress and our performance. As a result, we have never gotten any complaints or bad reviews for our work.',
+           
+           tt1: `DP7 Design's highly creative, innovative and passionate team`,
+           tt2: 'DP7 Design is packed with passion-driven professionals who believe in providing the best for their clients.',
+           tt3: 'We deploy only exceptionally experienced personnels on-site who can coordinate all the processes and utilize all the resources in-hand efficiently',
+           
+           pt1: `DP7 Design's partnered with many leading professionals in the construction industry`,
+           pt2: 'Our professionals range from those who can provide top-notch materials for production to those who can provide top of the line tools for us to construct buildings',
            
            brochure: 'Download Brochures',
 
@@ -109,6 +116,14 @@ new Vue({
            fat3: 'អតិថិជនរបស់យើងតែងតែ​ ជឿទុកចិត្តលើការសន្សំសំចៃនឹងផលិតផលមានគុណភាព។ វាកើតឡើងព្រោះពួកយើងតែងតែរាយការណ៍ជាមួយតម្លៃនៃផលិតផល។',
            fad4: 'ការវិនិឆ្ឆ័យគម្រោងប្រចាំខែ',
            fat4: 'ជារៀងរាល់ខែ ពួកយើងវិនិឆ្ឆ័យ និងមានការស្រង់មតិយោបលពីអតិថិជនលើដំណើរការគម្រោងរបស់យើង។ ជាលិទ្ធផលទទួលបានការមិនពេញចិត្តពីអតិថិជនឡើយ។',
+
+           tt1: 'DP7 Design ភ្ជាប់មកជាមួយភាពច្នៃប្រឌិត,​ ការបង្កើតថ្មី​ និងការពេញចិត្តជាមួយការងារ',
+           tt2: 'DP7 Design ផ្ដល់នូវបុគ្គលិកដែលមានការពេញចិត្តក្នុងការធ្វើការប្រកប​ដោយវិជ្ជាជីវ​​ ដែលអាចផ្ដល់ភាពល្អឥតខ្ជោះដល់អតិថិជន',
+           tt3: 'យើងផ្ដល់ជូនបុគ្គលិកដែលមានបទពិសោធន៍ជាមួយអ្នកគ្រប់គ្រងដែលដឹកនាំកម្មករគ្រប់ជំនាញ នឹងប្រើប្រាស់បរិក្ខាឲ្យអស់ពីសមត្ថិភាព',
+          
+           pt1: `DP7 Design បានសហការណ៍ជាមួយដៃគូរដៃលល្បីក្នុងការផ្គត់ផ្គង់សម្ភារៈសំណង់`,
+           pt2: 'យើងតែងតែធ្វើឲ្យអតិថិជនពេញចិត្ត ព្រោះយើងផ្ដល់នូវគ្រឿងបរិក្ខាយា៉ងទំនើប​ និងមានគុណភាព',
+           
 
            brochure: 'ទាញយកខិត្តប័ណ្ណ',
 
