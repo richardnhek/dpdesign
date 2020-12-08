@@ -2,7 +2,7 @@ new Vue({
     el: '#ap1',
     data: {
        defaultLang: 'en',
-       langs: [ {id: 'en', name: 'English'}, {id: 'kh', name: 'Khmer'}],
+       langs: [ {id: 'en', name: 'ENGLISH'}, {id: 'kh', name: 'KHMER'}],
        text: {
          en: {
             navHome: 'Home',
